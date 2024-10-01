@@ -20,7 +20,7 @@ document.querySelectorAll('.emotion').forEach(img => {
             
 
                         
-            const book = { ...data.results }; // TODO: Aquí deberíamos tener un objeto con información del libro de la REST API
+            const book = { ...data.results[0] }; // TODO: Aquí deberíamos tener un objeto con información del libro de la REST API
 
             // NO MODIFICAR A PARTIR DE AQUÍ
             document.querySelector('#book-title').textContent = book.title;
